@@ -23,9 +23,6 @@
 			  <a href="mlcomparisons.html">Comparisons</a>
 			</li>
 			<li>
-			  <a href="aboutus.html">About Us</a>
-			</li>
-			<li>
 			  <a href='sources.html'>Sources</a>
 			</li>
 		  </ul>
@@ -34,9 +31,9 @@
 	      <div class="dropdown">
 			<a href="MLcomparisons.html" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Machine Learning Models<span class="caret"></span></a> 
               <div class="dropdown-content">
-				<a href="models/convolutedcnn.html">Convolutional Neural Networks (CNN)</a> 
+				<a href="models/sequential_model.html">Sequential Model</a> 
 			    <a href="models/logisticregression.html">Logistic Regression</a> 
-			    <a href="models/andrewmodel.html">Andrew</a> 
+			    <a href="models/rnn.html">Recurrent Neural Network</a> 
 			    <a href="models/knn.html">k-Nearest Neighbours (kNN)</a> 
               </div>
             </div>
@@ -58,10 +55,26 @@
      <div class='row'>
        <div class='col-sm-12 col-md-6'>
          <div class='box rounded'>
-           <h1>Convolutional Neural Networks</h1>
+           <h1>Sequential Model</h1>
            <ul>
              <li>
-               <a>unordered list of statistics go here. your highlights: difficulty of model, accuracy of model, etc. No pictures! Example in kNN</a>
+               <a>Accuracy: 10.8-11%</a>
+             </li>
+             <li>
+               <a>Advantages: </a>
+             </li>
+               <ul>
+                 <li><a>Plenty of options for your model--can study to optimize performance</a></li>
+                 <li><a>Fast learning model that won't kill your processor</a></li>
+               </ul>
+             <li>
+               <a>Disadvantages:</a>
+             </li>
+               <ul>
+                 <li><a>Images with white space can (and will) effect your model</a></li>
+               </ul>
+             <li>
+               <a>Recommendation: Make sure to do your research first!</a>
              </li>
            </ul>
          </div>
@@ -71,7 +84,23 @@
            <h1>Logistic Regression</h1>
            <ul>
              <li>
-               <a>unordered list of statistics go here. your highlights: difficulty of model, accuracy of model, etc. No pictures! Example in kNN</a>
+               <a>Accuracy: 100% (overfit)</a>
+             </li>
+             <li>
+               <a>Advantages: </a>
+             </li>
+               <ul>
+                 <li><a>Ease of use.</a></li>
+                 <li><a>Reports are built in.</a></li>
+               </ul>
+             <li>
+               <a>Disadvantages:</a>
+             </li>
+               <ul>
+                 <li><a>Model is overfit</a></li>
+               </ul>
+             <li>
+               <a>Recommendation: Good to go.</a>
              </li>
            </ul>
          </div>
@@ -80,10 +109,26 @@
      <div class='row'>
        <div class='col-sm-12 col-md-6'>
          <div class='box rounded'>
-           <h1>Andrew's Model</h1>
-           <ul>
+           <h1>Recurrent Neural Networks:</h1>
+              <ul>
              <li>
-               <a>unordered list of statistics go here. your highlights: difficulty of model, accuracy of model, etc. No pictures! Example in kNN</a>
+               <a>Accuracy: 92%</a>
+             </li>
+             <li>
+               <a>Advantages: </a>
+             </li>
+               <ul>
+                 <li><a>Uses previous inputs to determine output.</a></li>
+                 <li><a>Good at predicting what is going to happen next, but not necessarily reading a static image.</a></li>
+               </ul>
+             <li>
+               <a>Disadvantages:</a>
+             </li>
+               <ul>
+                 <li><a>CPU Intensive</a></li>
+               </ul>
+             <li>
+               <a>Recommendation: Good for this easily predictable file structure of images.</a>
              </li>
            </ul>
          </div>
@@ -98,6 +143,11 @@
              <li>
                <a>Advantages: </a>
              </li>
+             <ul>
+               <li><a>None. It feels like a false illusion; one would think that when images cluster, 
+               grapes would identify with other grapes, but that's not the case when it is broken 
+               down by pixels and saturation.</a></li>
+             </ul>
              <li>
                <a>Disadvantages:</a>
              </li>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+	
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recurrent Neural Network</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Amita|DM+Serif+Display|Kurale|Palanquin&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-toggler">
+      <div class="container-fluid">
+        <div class="navbar-collapse-sm">
+          <ul>
+			<li>
+				<a href="../../index.html">Home</a>
+			</li>
+			<li>
+			  <a href="../mlcomparisons.html">Comparisons</a>
+			</li>
+			<li>
+			  <a href='../sources.html'>Sources</a>
+			</li>
+		  </ul>
+		</div>
+		<div class="Selection">
+	      <div class="dropdown">
+			<a href="../MLcomparisons.html" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Machine Learning Models<span class="caret"></span></a> 
+              <div class="dropdown-content">
+				<a href="sequential_model.html">Sequential Model</a> 
+			    <a href="logisticregression.html">Logistic Regression</a> 
+			    <a href="rnn.html">Recurrent Neural Network</a> 
+			    <a href="knn.html">k-Nearest Neighbours (kNN)</a> 
+              </div>
+            </div>
+         </div>
+       <div class="clearfix"></div>
+     </div>
+   </nav>
+   <div class='container'>
+	   <div class='jumbotron'>
+	     <h1>Recurrent Neural Networks:</h1>
+	     <h2>A class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence.</h2>
+	   </div>
+       <div class='row'>
+         <div class='col-md-12'>
+		   <div class='box rounded'>
+           <p>I used a recurrent neural network (RNN) for image classification. 
+           The RNN the current input example they see, and also input that has been used previously to a certain extent. 
+           If all the hidden layers have the same weights and bias then you can merge them together and each step will go 
+           through the hidden layer and a recurrent neuron stores the information from each stepped that has gone through and merges it with the current step. 
+           RNN is optimized for predicting what is going to come next, particularly for language, such as which letter or word is going to come next. </p>
+         </div>
+        </div>
+       </div>
+<!--
+       <div class='row'>
+		   <div class='col-xs-12 col-md-4'>
+		     <figure>
+               <img src="../../Output/Andrew/andrew1.jpg"
+					   width='350'
+                       height='275'> 
+			  </figure>
+		   </div>
+           <div class='col-xs-12 col-md-4'>
+		     <figure>
+               <img src="../../Output/Andrew/andrew2.jpg"
+					   width='350'
+                       height='275'> 
+			  </figure>
+		   </div>
+		   <div class='col-xs-12 col-md-4'>
+		     <figure>
+               <img src="../../Output/Andrew/andrew3.jpg"
+					   width='350'
+                       height='275'> 
+			  </figure>
+		   </div>
+       </div>
+-->
+   </div>
+   
+</body>
