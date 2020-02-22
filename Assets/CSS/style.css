@@ -1,0 +1,121 @@
+/*
+font-family: 'DM Serif Display', serif;
+font-family: 'Palanquin', sans-serif;
+font-family: 'Kurale', serif;
+font-family: 'Amita', cursive;
+*/
+
+.navbar {
+	background-color: #143256;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #9f57d4;
+  border-color: #fff;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Kurale', serif;
+  font-style: bold;
+}
+
+.dropbtn {
+   background-color: white;
+   color: #040a11;
+   text-align: right;
+}
+
+.btn-primary {
+   color: #040a11;
+   background-color: #fff;
+   border-color: #fff;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+   text-align: right;
+   font-family: 'Kurale', serif;
+   font-size: medium;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   width: 200px;
+   z-index: 1;
+}
+
+.dropdown-content a {
+   color: #040a11;
+   padding: 10px 1px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/39/Vincent_van_Gogh%E2%80%99s_famous_painting%2C_digitally_enhanced_by_rawpixel-com_29.jpg);
+	background-size: cover;
+}
+
+.jumbotron {
+	background-color: #fff;
+	opacity: 70%;
+	font-family: 'DM Serif Display', serif;
+	text-align: center;
+}
+
+.jumbotron h1 {
+	font-size: xxx-large;
+	color: #0f0815;
+}
+
+.jumbotron h2 {
+	font-size: xx-large;
+	color: #040a11;
+}
+
+.box {
+	background-color: #0f0815;
+	color: #8185ac;
+	font-family: 'Kurale', serif;
+	font-size: large;
+	opacity: 85%;
+}
+
+.box h1{
+	font-family: 'DM Serif Display', serif;
+	font-size: x-large;
+}
+
+.box h2{
+	font-family: 'Kurale', serif;
+	font-size: x-large;
+}
+
+.box p{
+	font-family: 'Kurale', serif;
+	font-size: large;
+}
+
+.panel {
+	background-color: 	#fff;
+	color: #0f0815;
+	font-family: 'DM Serif Display', serif;
+	font-size: x-large;
+	text-align: center;
+	opacity: 80%;
+}
