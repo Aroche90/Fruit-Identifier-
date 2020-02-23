@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en'>
+	
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>k-Nearest Neighbor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Amita|DM+Serif+Display|Kurale|Palanquin&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-toggler">
+      <div class="container-fluid">
+        <div class="navbar-collapse-sm">
+          <ul>
+			<li>
+				<a href="../../index.html">Home</a>
+			</li>
+			<li>
+			  <a href="../mlcomparisons.html">Comparisons</a>
+			</li>
+			<li>
+			  <a href='../sources.html'>Sources</a>
+			</li>
+		  </ul>
+		</div>
+		<div class="Selection">
+	      <div class="dropdown">
+			<a href="../MLcomparisons.html" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Machine Learning Models<span class="caret"></span></a> 
+              <div class="dropdown-content">
+				<a href="sequential_model.html">Sequential Model</a> 
+			    <a href="logisticregression.html">Logistic Regression</a> 
+			    <a href="rnn.html">Recurrent Neural Network</a> 
+			    <a href="knn.html">k-Nearest Neighbours (kNN)</a> 
+              </div>
+            </div>
+         </div>
+       <div class="clearfix"></div>
+     </div>
+   </nav>
+   <div class='container'>
+     <div class='jumbotron'>
+       <h1>k-Nearest Neighbors (kNN)</h1>
+       <h2>Identifying objects by clustering them into groups based on similar traits.</h2>
+     </div>
+     <div class='row'>
+       <div class='col-md-12'>
+         <div class='box rounded'>
+          <p>First off, I need to give credit to the domain www.pyimagesearch.com, whose code and explanations really helped me
+          to understand machine learning, and how to convert images into arrays that make sense. However, that being said, k-Nearest
+          Neighbor is not a model that I would recommend for classifying images in the future.</p>
+          <p>To convert the images from the Kaggle dataset into arrays that could be evaluated, first I used Python to calculate the 
+          R,G & B values for each image. Obviously, this needed to be in a loop in order to process each image. After looping the files, 
+          I sent them through 2 functions: the first flattened the images, and the second turned each of the R, G & B values between 0
+          (black) and 256 (white) into a histogram. An example of what this looked like is listed below.</p>
+          <p>After putting the histograms together, the model attempted to train itself based on images that followed a similar histogram
+          pattern for each input element. This is where the trouble started to set in: an image with approx. a third white space in the 
+          background is going to be skewed towards the high values of each of the R, G & B elements. Unfortunately, as these were the 
+          highest numbers for each image, the computer struggled to identify these fruits correctly.</p>
+          <p>In order to combat these struggles, I sorted the dataset down to just 2 fruits: White Grapes (actually green), and Black/Red 
+          Cherries. I chose these two because the hue variation between them was highest, and they were a similar size and shape. 
+          The second aspect that I (attempted) to add in was to mask a portion of each picture. Ideally, this would
+          eliminate all of the white space, focusing only on the R, G & B values for each fruit. However, aligning the mask turned out to be 
+          much more difficult than it appeared, as the values are assigned similarly to image spots in d3. Therefore, I ended up abandoning
+          my attempts at a more successful model.</p>
+         </div>
+       </div>
+     </div>
+     <div class='row'>
+       <div class='col-md-12'>
+         <div class='panel1 rounded'>Histogram Color Distribution</div>
+       </div>
+     </div>
+      <div class='row'>
+       <div class='col-xs-12 col-sm-6 col-md-3'>
+         <figure>
+           <img src="../../resources/images/Kaggle/fruits-360_dataset/fruits-360/VS/g_ch2/grape(1).jpg" 
+			      alt="grape thumbnail"
+			      width='200'
+			      height='200'>
+         </figure>
+       </div>
+       <div class='col-xs-12 col-sm-6 col-md-3'>
+         <figure>
+           <img src='../../Output/Amy/grape_histogram_color_distribution.png'
+                   alt='grapehist thumbnail'
+                   width='200'
+                   height='200'>
+         </figure>
+       </div>
+       <div class='col-xs-12 col-sm-6 col-md-3'>
+         <figure>
+           <img src="../../resources/images/Kaggle/fruits-360_dataset/fruits-360/VS/g_ch2/cherry(1).jpg" 
+			      alt="cherry thumbnail"
+			      width='200'
+			      height='200'>
+         </figure>
+       </div>
+       <div class='col-xs-12 col-sm-6 col-md-3'>
+         <figure>
+           <img src='../../Output/Amy/cherry_histogram_color_distribution.png'
+                   alt='cherryhist thumbnail'
+                   width='200'
+                   height='200'>
+         </figure>
+       </div>
+     </div>
+     <div class='row'>
+       <div class='col-xs-12 col-md-4'>
+         <figure>
+           <img src='../../Output/Amy/argparsecode.png'
+                   alt='argparsecode thumbnail'
+                   width='350'
+                   height='200'>
+         </figure> 
+         <div class='panel rounded'>Argument Parser--Look it Up!!!</div>  
+       </div>
+       <div class='col-xs-12 col-md-4'>
+         <figure>
+           <img src='../../Output/Amy/argparseinput.png'
+                   alt='buildcode thumbnail'
+                   width='350'
+                   height='350'>
+         </figure>
+       </div>
+       <div class='col-xs-12 col-md-4'>
+         <div class='box rounded'>
+           <p>To the far right is the arg parse code, and to the right is 
+           where you input your file bath via the build tool. I found this to
+           be incredibly helpful if you are running one function on multiple 
+           sets of data, or even just testing your function over and over 
+           again because you chose to simplify your dataset. I highly 
+           recommend looking into the documentation online.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </body>

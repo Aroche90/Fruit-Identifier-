@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang='en'>
+	
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MLComparisons</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Amita|DM+Serif+Display|Kurale|Palanquin&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+      <nav class="navbar navbar-toggler">
+      <div class="container-fluid">
+        <div class="navbar-collapse-sm">
+          <ul>
+			<li>
+				<a href="../index.html">Home</a>
+			</li>
+			<li>
+			  <a href="mlcomparisons.html">Comparisons</a>
+			</li>
+			<li>
+			  <a href='sources.html'>Sources</a>
+			</li>
+		  </ul>
+		</div>
+		<div class="Selection">
+	      <div class="dropdown">
+			<a href="MLcomparisons.html" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Machine Learning Models<span class="caret"></span></a> 
+              <div class="dropdown-content">
+				<a href="models/sequential_model.html">Sequential Model</a> 
+			    <a href="models/logisticregression.html">Logistic Regression</a> 
+			    <a href="models/rnn.html">Recurrent Neural Network</a> 
+			    <a href="models/knn.html">k-Nearest Neighbours (kNN)</a> 
+              </div>
+            </div>
+         </div>
+       <div class="clearfix"></div>
+     </div>
+   </nav>
+   <div class='container'>
+     <div class="jumbotron">
+       <h1>
+         Machine Learning Models
+       </h1>
+       <h2>
+         Here is a summary of each of our machine learning modules, including their performance.
+         To learn more about the process taken for each of these, please click on the links below,
+         or navigate to each via the drop down bar above. Happy (Machine) Learning!
+       </h2>
+     </div>
+     <div class='row'>
+       <div class='col-sm-12 col-md-6'>
+         <div class='box rounded'>
+           <h1>Sequential Model</h1>
+           <ul>
+             <li>
+               <a>Accuracy: 10.8-11%</a>
+             </li>
+             <li>
+               <a>Advantages: </a>
+             </li>
+               <ul>
+                 <li><a>Plenty of options for your model--can study to optimize performance</a></li>
+                 <li><a>Fast learning model that won't kill your processor</a></li>
+               </ul>
+             <li>
+               <a>Disadvantages:</a>
+             </li>
+               <ul>
+                 <li><a>Images with white space can (and will) effect your model</a></li>
+               </ul>
+             <li>
+               <a>Recommendation: Make sure to do your research first!</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+       <div class='col-sm-12 col-md-6'>
+         <div class='box rounded'>
+           <h1>Logistic Regression</h1>
+           <ul>
+             <li>
+               <a>Accuracy: 100% (overfit)</a>
+             </li>
+             <li>
+               <a>Advantages: </a>
+             </li>
+               <ul>
+                 <li><a>Ease of use.</a></li>
+                 <li><a>Reports are built in.</a></li>
+               </ul>
+             <li>
+               <a>Disadvantages:</a>
+             </li>
+               <ul>
+                 <li><a>Model is overfit</a></li>
+               </ul>
+             <li>
+               <a>Recommendation: Good to go.</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     <div class='row'>
+       <div class='col-sm-12 col-md-6'>
+         <div class='box rounded'>
+           <h1>Recurrent Neural Networks:</h1>
+              <ul>
+             <li>
+               <a>Accuracy: 92%</a>
+             </li>
+             <li>
+               <a>Advantages: </a>
+             </li>
+               <ul>
+                 <li><a>Uses previous inputs to determine output.</a></li>
+                 <li><a>Good at predicting what is going to happen next, but not necessarily reading a static image.</a></li>
+               </ul>
+             <li>
+               <a>Disadvantages:</a>
+             </li>
+               <ul>
+                 <li><a>CPU Intensive</a></li>
+               </ul>
+             <li>
+               <a>Recommendation: Good for this easily predictable file structure of images.</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+       <div class='col-sm-12 col-md-6'>
+         <div class='box rounded'>
+           <h1>k-Nearest Neighbours</h1>
+           <ul>
+             <li>
+               <a>Accuracy: less than 1%</a>
+             </li>
+             <li>
+               <a>Advantages: </a>
+             </li>
+             <ul>
+               <li><a>None. It feels like a false illusion; one would think that when images cluster, 
+               grapes would identify with other grapes, but that's not the case when it is broken 
+               down by pixels and saturation.</a></li>
+             </ul>
+             <li>
+               <a>Disadvantages:</a>
+             </li>
+			   <ul>
+			     <li><a>Pixel Histograms: Lots of color overlap between fruits.</a></li>
+			     <li><a>Identified only by color, saturation, & hue, not by shape.</a></li>
+			     <li><a>Needs pictures to be labeled properly.</a></li>
+			   </ul>
+             <li>
+               <a>Recommendation: Not for image identification.</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+</body>
+

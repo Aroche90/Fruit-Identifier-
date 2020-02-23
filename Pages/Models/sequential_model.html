@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+	
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Convolutional Neural Networks</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Amita|DM+Serif+Display|Kurale|Palanquin&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-toggler">
+      <div class="container-fluid">
+        <div class="navbar-collapse-sm">
+          <ul>
+			<li>
+				<a href="../../index.html">Home</a>
+			</li>
+			<li>
+			  <a href="../mlcomparisons.html">Comparisons</a>
+			</li>
+			<li>
+			  <a href='../sources.html'>Sources</a>
+			</li>
+		  </ul>
+		</div>
+		<div class="Selection">
+	      <div class="dropdown">
+			<a href="../MLcomparisons.html" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Machine Learning Models<span class="caret"></span></a> 
+              <div class="dropdown-content">
+				<a href="sequential_model.html">Sequential Model</a> 
+			    <a href="logisticregression.html">Logistic Regression</a> 
+			    <a href="rnn.html">Recurrent Neural Network</a> 
+			    <a href="knn.html">k-Nearest Neighbours (kNN)</a> 
+              </div>
+            </div>
+         </div>
+       <div class="clearfix"></div>
+     </div>
+   </nav>
+   <div class='container'>
+     <div class='jumbotron'>
+       <h1>Sequential Model:</h1>
+       <h2>Building a machine learning model layer by layer.</h2>
+     </div>
+     <div class='row'>
+       <div class='col-md-12'>
+         <div class='panel1 rounded'>Useful Functions</div>
+         <figure>
+           <img src="../../resources/images/heather/table_description.png" 
+			      alt="terms thumbnail"
+			      width='900'
+			      height='500'>
+         </figure>
+       </div>
+     </div>
+     <div class='row'>
+	   <div class='col-md-12'>
+         <div class='box rounded'>
+			 <p>I used images from  https://github.com/Horea94/Fruit-Images-Dataset  to train my CNN. 
+			 I was able to upload the 10 chosen fruit types for Testing and Training to Google Drive. 
+			 I then connect that to the Google Colab Tutorial. We first set up our Batch Size, Image dimensions and Epoch number. 
+			 The ImageDataGenerator( ) rescaled the images for both testing and training sets. 
+			 The sequential model had three convolutional layers, each layer having a MaxPool layer as well. 
+			 Finally, we add a Dense or “fully connected” layer with 512 units to the model.  
+			 The model was trained on 11 steps as was set by dividing the training data by the batch size. 
+			 The model was only able to achieve 10.8% accuracy, sometimes performing at 11% accuracy. 
+			 I learned that the ‘rmsprop’ optimizer performed slightly better than the ‘adam’ optimizer in this classification exercise. 
+			 I researched Optimizers and found that the ‘Adagrad’ optimizer would have been better for this classification problem.</p>
+         </div>
+       </div>
+     </div>
+     <div class='row'>
+       <div class='col-xs-12 col-md-4'>
+         <div class='panel1 rounded'>Accuracy of Different Optimizers</div>
+         <figure>
+           <img src="../../resources/images/Heather/Adam_vs.png" 
+			      alt="optimizer thumbnail"
+			      width='350'
+			      height='275'
+			      title='Notice how much less the training cost of Adagrad is compared to Adam.'>
+         </figure>
+       </div>
+       <div class='col-xs-12 col-md-4'>
+         <div class='panel1 rounded'>Model Summary</div>
+         <figure>
+           <img src="../../resources/images/Heather/image.png" 
+			      alt="optimizer thumbnail"
+			      width='350'
+			      height='275'
+			      title='Notice how much less the training cost of Adagrad is compared to Adam.'>
+         </figure>
+       </div>
+       <div class='col-xs-12 col-md-4'>
+         <div class='panel1 rounded'>Building the Model</div>
+         <figure>
+           <img src="../../resources/images/Heather/image1.png" 
+			      alt="optimizer thumbnail"
+			      width='350'
+			      height='275'
+			      title='Notice how much less the training cost of Adagrad is compared to Adam.'>
+         </figure>
+       </div>
+     </div>
+   </div>
+
+</body>
